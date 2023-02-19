@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: content-box;
 }
+body{
+  font-family: 'Poor Story', cursive;
+font-family: 'Roboto Mono', monospace;
+font-size: 13px;
+}
 .header,
 .side-bar, 
 .projects-section, 
@@ -14,24 +19,87 @@
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
+
 .header{
-  grid-column: 1/3;
+  grid-column: 2/3;
   display:flex;
   flex-direction: column;
+}
 
+a{
+  text-decoration: none;
+
+  color: black;
+}
+.header ul a{
+  background-color:#6184D8;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 26px;
+  font-weight: bold;
+}
+.header ul a:hover,
+.header ul a:active{
+  
+  background-color:#395db1;
+}
+.icon{
+  width:24px;
+  height: 24px;
 }
 
 .search-profile-section{
-  border: 1px solid blue;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2.5em;
+ 
 }
+.search-profile-section .search-bar input{
+  width: 600px;
+  height: 30px;
+  margin-right: 3rem;
+  border-radius: 16px;
+  background-color: aliceblue;
+ 
+ 
+}
+.search-profile-section .profile-img{
+  background-color: #FFD334;
+  padding: 8px;
+  border-radius: 50%;
+}
+.search-profile-section .header-profile-name{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 .menu-profile-section{
-  border: 1px solid blue;
   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+ 
+  
+}
+.menu-profile-section .profile-img{
+padding: 12px;
+border-radius: 50%;
+background-color: #FFD334;
+margin-right: -34%;
+}
+.header-menu ul{
+  list-style: none;
+  display: flex;
+  gap: 24px;
+ 
 }
 
 .side-bar{
   display: grid;
   grid-column: 1/2;
+  grid-row: 1/4;
  
 }
 .main-section-container{
@@ -45,7 +113,6 @@
 }
 .projects-section .card{
   height: 400px;
-  border: 1px solid blue;
 }
 .footer{
   grid-column: 1/3;
