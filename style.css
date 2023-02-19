@@ -6,18 +6,21 @@
 body{
   font-family: 'Poor Story', cursive;
 font-family: 'Roboto Mono', monospace;
-font-size: 13px;
+font-size: clamp(0.5rem,1rem,2vw);
+
 }
 .header,
 .side-bar, 
 .projects-section, 
 .announcement-section,
 .trending-section{
-  border:1px solid red;
+  
 }
 .container{
   display: grid;
   grid-template-columns: 1fr 4fr;
+ 
+
 }
 
 .header{
@@ -44,8 +47,8 @@ a{
   background-color:#395db1;
 }
 .icon{
-  width:24px;
-  height: 24px;
+  width:clamp(1rem,34em,2vw);
+  height:auto;
 }
 
 .search-profile-section{
@@ -55,9 +58,9 @@ a{
   padding: 0.5rem 2.5em;
  
 }.search-profile-section .search-bar input{
-  width: 600px;
-  height: 30px;
-  margin-right: 2rem;
+  width: 45vw;
+  height: 2rem;
+  margin-right: 3rem;
   border-radius: 16px;
   background-color: aliceblue;
  
@@ -120,19 +123,76 @@ background-color: #FFD334;
 .header-menu ul{
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
  
 }
 
 .side-bar{
   display: grid;
+  grid-template-rows: 0.15fr 0.5fr 2fr;
   grid-column: 1/2;
-  grid-row: 1/4;
- 
+  grid-row: 1/3;
+  background-color: rgb(252, 252, 252);
+  color: black;
+
+  
+  
 }
+.side-bar-item{
+  padding: 1rem 2rem;
+  font-size: 2.5vh;
+
+}
+.side-bar-item:hover,
+.side-bar .dashboard:hover{
+  border-radius: 3rem;
+  background-color: rgb(228, 224, 224);
+}
+.side-bar-item p a{
+  color: black;
+  font-weight: bold;
+  
+  
+  
+}
+
+
+.side-bar-nav-1{
+  
+}
+.side-bar .dashboard{
+  display: flex;
+  gap: 0.5rem;
+  font-size: clamp(1vw,1.5rem,2rem);
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  
+
+  }
+  .side-bar .dashboard .icon{
+    width: clamp(1rem,5vw,2rem);
+  }
+  
+
+.side-bar-nav-2{
+  margin-top: 2rem;
+}
+.side-bar-item{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  
+}
+
+
+
 .main-section-container{
+  overflow: auto;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 .projects-section{
   grid-row: 1/3;
@@ -145,7 +205,6 @@ background-color: #FFD334;
 .footer{
   grid-column: 1/3;
   grid-row: 3/4 ;
-  border: 1px blue solid;
 }
 
 
