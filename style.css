@@ -54,14 +54,12 @@ a{
   align-items: center;
   padding: 0.5rem 2.5em;
  
-}
-.search-profile-section .search-bar input{
+}.search-profile-section .search-bar input{
   width: 600px;
   height: 30px;
-  margin-right: 3rem;
+  margin-right: 2rem;
   border-radius: 16px;
   background-color: aliceblue;
- 
  
 }
 .search-profile-section .profile-img{
@@ -73,6 +71,24 @@ a{
   font-weight: bold;
   font-size: 1rem;
 }
+.notification-icon{
+padding:8px;
+}
+.notification-icon:hover{
+  background-color: rgb(228, 224, 224);
+  border-radius: 50%;
+}
+.username{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 1.5rem;
+}
+.username:hover{
+  background-color:rgb(228, 224, 224) ;
+  border-radius: 26px;
+}
+
 
 .menu-profile-section{
   
@@ -87,8 +103,20 @@ a{
 padding: 12px;
 border-radius: 50%;
 background-color: #FFD334;
-margin-right: -34%;
 }
+
+.profile-section{
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  align-items: center;
+  margin-left: -24px;
+}
+.profile-section:hover{
+  background-color: rgb(228, 224, 224);
+  border-radius: 38px;
+}
+
 .header-menu ul{
   list-style: none;
   display: flex;
